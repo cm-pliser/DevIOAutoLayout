@@ -36,7 +36,8 @@
     self.dateLabel.text = data[@"date"];
     self.contentLabel.text = data[@"content"];
     
-    [self layoutIfNeeded];
+    [self setNeedsLayout];
+    [self setNeedsUpdateConstraints];
 }
 
 - (void)layoutSubviews
@@ -57,6 +58,9 @@
     });
     
     sizingCell.data = data;
+    
+    [sizingCell setNeedsLayout];
+    [sizingCell layoutIfNeeded];
     
     CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     

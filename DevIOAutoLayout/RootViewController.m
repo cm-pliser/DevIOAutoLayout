@@ -22,56 +22,75 @@
 
 #pragma mark - Table view data source
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 3;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return 6;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    if (indexPath.row == 0) {
-        cell.textLabel.text = @"Lesson1";
-    } else if (indexPath.row == 1) {
-        cell.textLabel.text = @"Lesson1Answer";
-    } else if (indexPath.row == 2) {
-        cell.textLabel.text = @"Lesson2";
-    } else if (indexPath.row == 3) {
-        cell.textLabel.text = @"Lesson2Answer";
-    } else if (indexPath.row == 4) {
-        cell.textLabel.text = @"Lesson3";
+    
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            cell.textLabel.text = @"Lesson1";
+        } else {
+            cell.textLabel.text = @"Lesson1Answer";
+        }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            cell.textLabel.text = @"Lesson2";
+        } else {
+            cell.textLabel.text = @"Lesson2Answer";
+        }
     } else {
-        cell.textLabel.text = @"Lesson3Answer";
+        if (indexPath.row == 0) {
+            cell.textLabel.text = @"Lesson3";
+        } else {
+            cell.textLabel.text = @"Lesson3Answer";
+        }
     }
+    
     return cell;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    if (indexPath.row == 0) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson1" bundle:nil];
-        UIViewController *viewController = [storyboard instantiateInitialViewController];
-        [self.navigationController pushViewController:viewController animated:YES];
-    } else if (indexPath.row == 1) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson1Answer" bundle:nil];
-        UIViewController *viewController = [storyboard instantiateInitialViewController];
-        [self.navigationController pushViewController:viewController animated:YES];
-    } else if (indexPath.row == 2) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson2" bundle:nil];
-        UIViewController *viewController = [storyboard instantiateInitialViewController];
-        [self.navigationController pushViewController:viewController animated:YES];
-    } else if (indexPath.row == 3) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson2Answer" bundle:nil];
-        UIViewController *viewController = [storyboard instantiateInitialViewController];
-        [self.navigationController pushViewController:viewController animated:YES];
-    } else if (indexPath.row == 4) {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson3" bundle:nil];
-        UIViewController *viewController = [storyboard instantiateInitialViewController];
-        [self.navigationController pushViewController:viewController animated:YES];
+{    
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson1" bundle:nil];
+            UIViewController *viewController = [storyboard instantiateInitialViewController];
+            [self.navigationController pushViewController:viewController animated:YES];
+        } else {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson1Answer" bundle:nil];
+            UIViewController *viewController = [storyboard instantiateInitialViewController];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson2" bundle:nil];
+            UIViewController *viewController = [storyboard instantiateInitialViewController];
+            [self.navigationController pushViewController:viewController animated:YES];
+        } else {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson2Answer" bundle:nil];
+            UIViewController *viewController = [storyboard instantiateInitialViewController];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
     } else {
-        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson3Answer" bundle:nil];
-        UIViewController *viewController = [storyboard instantiateInitialViewController];
-        [self.navigationController pushViewController:viewController animated:YES];
+        if (indexPath.row == 0) {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson3" bundle:nil];
+            UIViewController *viewController = [storyboard instantiateInitialViewController];
+            [self.navigationController pushViewController:viewController animated:YES];
+        } else {
+            UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Lesson3Answer" bundle:nil];
+            UIViewController *viewController = [storyboard instantiateInitialViewController];
+            [self.navigationController pushViewController:viewController animated:YES];
+        }
     }
 }
 

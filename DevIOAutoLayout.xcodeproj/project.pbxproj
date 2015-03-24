@@ -192,13 +192,21 @@
 				C91DCAC81ABA6ADD002636E0 /* Lesson1Cell.h */,
 				C91DCAC91ABA6ADD002636E0 /* Lesson1Cell.m */,
 				C91DCACA1ABA6ADD002636E0 /* Lesson1.storyboard */,
+				C9E59E781AC1053E008624DB /* Answer */,
+			);
+			name = Lesson1;
+			sourceTree = "<group>";
+		};
+		C9E59E781AC1053E008624DB /* Answer */ = {
+			isa = PBXGroup;
+			children = (
 				C93865741ABAA32C00FDB7A4 /* Lesson1Answer.storyboard */,
 				C93865751ABAA32C00FDB7A4 /* Lesson1AnswerCell.h */,
 				C93865761ABAA32C00FDB7A4 /* Lesson1AnswerCell.m */,
 				C93865771ABAA32C00FDB7A4 /* Lesson1AnswerViewController.h */,
 				C93865781ABAA32C00FDB7A4 /* Lesson1AnswerViewController.m */,
 			);
-			name = Lesson1;
+			name = Answer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
