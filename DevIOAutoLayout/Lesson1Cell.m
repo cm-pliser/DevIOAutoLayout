@@ -18,14 +18,9 @@
 
 @implementation Lesson1Cell
 
-- (void)awakeFromNib {
-    // Initialization code
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void)awakeFromNib
+{
+    self.contentLabel.numberOfLines = 0;
 }
 
 - (void)setData:(NSDictionary *)data
@@ -36,7 +31,8 @@
     self.dateLabel.text = data[@"date"];
     self.contentLabel.text = data[@"content"];
     
-    [self layoutIfNeeded];
+    [self setNeedsLayout];
+    [self setNeedsUpdateConstraints];
 }
 
 - (void)layoutSubviews
@@ -57,6 +53,9 @@
     });
     
     sizingCell.data = data;
+    
+    [sizingCell setNeedsLayout];
+    [sizingCell layoutIfNeeded];
     
     CGSize size = [sizingCell.contentView systemLayoutSizeFittingSize:UILayoutFittingCompressedSize];
     
