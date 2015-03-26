@@ -10,12 +10,15 @@
 
 @interface Lesson3ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *menuView;
+
 @end
 
 @implementation Lesson3ViewController
 
 - (IBAction)menuButtonDidTap:(id)sender
 {
+    self.menuView.hidden = !self.menuView.hidden;
 }
 
 @end
