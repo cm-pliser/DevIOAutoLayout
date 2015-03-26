@@ -10,28 +10,24 @@
 
 @interface Lesson3AnswerViewController ()
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *menuViewTrailingSpeceConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *menuViewWidthConstraint;
+
 @end
 
 @implementation Lesson3AnswerViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (IBAction)menuButtonDidTap:(id)sender
+{
+    if (self.menuViewTrailingSpeceConstraint.constant == 0) {
+        self.menuViewTrailingSpeceConstraint.constant = -self.menuViewWidthConstraint.constant;
+    } else {
+        self.menuViewTrailingSpeceConstraint.constant = 0;
+    }
+    
+    [UIView animateWithDuration:0.2 delay:0.0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        [self.view layoutIfNeeded];
+    } completion:nil];
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

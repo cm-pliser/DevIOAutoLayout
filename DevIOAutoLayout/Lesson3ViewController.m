@@ -10,28 +10,15 @@
 
 @interface Lesson3ViewController ()
 
+@property (weak, nonatomic) IBOutlet UIView *menuView;
+
 @end
 
 @implementation Lesson3ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+- (IBAction)menuButtonDidTap:(id)sender
+{
+    self.menuView.hidden = !self.menuView.hidden;
 }
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
