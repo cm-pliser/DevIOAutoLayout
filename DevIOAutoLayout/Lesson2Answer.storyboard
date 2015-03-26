@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wYc-RX-QC2">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="wYc-RX-QC2">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
@@ -23,17 +23,6 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85C-x7-X2C" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lesson2_photo" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-PS-Pkx">
-                                                <rect key="frame" x="0.0" y="-766" width="600" height="1066"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="height" constant="250" id="PvX-VU-pCH"/>
-                                                </constraints>
-                                                <variation key="default">
-                                                    <mask key="constraints">
-                                                        <exclude reference="PvX-VU-pCH"/>
-                                                    </mask>
-                                                </variation>
-                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHM-Pc-Yqa" userLabel="Sub View">
                                                 <rect key="frame" x="0.0" y="300" width="600" height="900"/>
                                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
@@ -41,6 +30,9 @@
                                                     <constraint firstAttribute="height" constant="900" id="gQ1-cM-Z0Q"/>
                                                 </constraints>
                                             </view>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lesson2_photo" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-PS-Pkx">
+                                                <rect key="frame" x="0.0" y="-200" width="600" height="500"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
@@ -68,7 +60,8 @@
                             <constraint firstAttribute="trailing" secondItem="egO-YG-hvE" secondAttribute="trailing" id="7Ao-IR-o2M"/>
                             <constraint firstItem="egO-YG-hvE" firstAttribute="top" secondItem="tjK-tH-1TF" secondAttribute="top" id="HNs-vK-FC0"/>
                             <constraint firstItem="FiQ-87-KMH" firstAttribute="top" secondItem="egO-YG-hvE" secondAttribute="bottom" id="YQ6-gm-VWf"/>
-                            <constraint firstItem="1Bv-PS-Pkx" firstAttribute="top" relation="greaterThanOrEqual" secondItem="D45-dZ-3Tq" secondAttribute="bottom" priority="750" id="lCA-KZ-Uoj"/>
+                            <constraint firstItem="1Bv-PS-Pkx" firstAttribute="top" secondItem="D45-dZ-3Tq" secondAttribute="bottom" priority="750" id="eju-yY-Yft"/>
+                            <constraint firstItem="1Bv-PS-Pkx" firstAttribute="top" relation="lessThanOrEqual" secondItem="D45-dZ-3Tq" secondAttribute="bottom" id="lCA-KZ-Uoj"/>
                             <constraint firstItem="egO-YG-hvE" firstAttribute="leading" secondItem="tjK-tH-1TF" secondAttribute="leading" id="uVq-Ev-hoY"/>
                         </constraints>
                     </view>
@@ -79,6 +72,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="lesson2_photo" width="1600" height="1066"/>
+        <image name="lesson2_photo" width="500" height="500"/>
     </resources>
 </document>
