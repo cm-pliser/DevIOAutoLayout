@@ -96,6 +96,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C823AAB51AC52E0F00FD3DEA /* Lesson1Answer */ = {
+			isa = PBXGroup;
+			children = (
+				C93865741ABAA32C00FDB7A4 /* Lesson1Answer.storyboard */,
+				C93865751ABAA32C00FDB7A4 /* Lesson1AnswerCell.h */,
+				C93865761ABAA32C00FDB7A4 /* Lesson1AnswerCell.m */,
+				C93865771ABAA32C00FDB7A4 /* Lesson1AnswerViewController.h */,
+				C93865781ABAA32C00FDB7A4 /* Lesson1AnswerViewController.m */,
+			);
+			name = Lesson1Answer;
+			sourceTree = "<group>";
+		};
+		C823AAB61AC52E8000FD3DEA /* Lesson2Answer */ = {
+			isa = PBXGroup;
+			children = (
+				C938657F1ABAA41C00FDB7A4 /* Lesson2AnswerViewController.h */,
+				C93865801ABAA41C00FDB7A4 /* Lesson2AnswerViewController.m */,
+				C93865861ABAA46800FDB7A4 /* Lesson2Answer.storyboard */,
+			);
+			name = Lesson2Answer;
+			sourceTree = "<group>";
+		};
+		C823AAB71AC52E9900FD3DEA /* Lesson3Answer */ = {
+			isa = PBXGroup;
+			children = (
+				C938658A1ABAA49D00FDB7A4 /* Lesson3Answer.storyboard */,
+				C938658F1ABAA4BA00FDB7A4 /* Lesson3AnswerViewController.h */,
+				C93865901ABAA4BA00FDB7A4 /* Lesson3AnswerViewController.m */,
+			);
+			name = Lesson3Answer;
+			sourceTree = "<group>";
+		};
 		C91DCA911ABA6A8E002636E0 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +150,11 @@
 			isa = PBXGroup;
 			children = (
 				C91DCAC51ABA6AA2002636E0 /* Lesson1 */,
+				C823AAB51AC52E0F00FD3DEA /* Lesson1Answer */,
 				C91DCAC41ABA6A9C002636E0 /* Lesson2 */,
+				C823AAB61AC52E8000FD3DEA /* Lesson2Answer */,
 				C91DCAC31ABA6A96002636E0 /* Lesson3 */,
+				C823AAB71AC52E9900FD3DEA /* Lesson3Answer */,
 				C91DCAA11ABA6A8E002636E0 /* AppDelegate.h */,
 				C91DCAA21ABA6A8E002636E0 /* AppDelegate.m */,
 				C91DCAA71ABA6A8E002636E0 /* Main.storyboard */,
@@ -162,11 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				C93865881ABAA48600FDB7A4 /* Lesson3.storyboard */,
-				C938658A1ABAA49D00FDB7A4 /* Lesson3Answer.storyboard */,
 				C938658C1ABAA4AD00FDB7A4 /* Lesson3ViewController.h */,
 				C938658D1ABAA4AD00FDB7A4 /* Lesson3ViewController.m */,
-				C938658F1ABAA4BA00FDB7A4 /* Lesson3AnswerViewController.h */,
-				C93865901ABAA4BA00FDB7A4 /* Lesson3AnswerViewController.m */,
 			);
 			name = Lesson3;
 			sourceTree = "<group>";
@@ -176,10 +208,7 @@
 			children = (
 				C938657C1ABAA40500FDB7A4 /* Lesson2ViewController.h */,
 				C938657D1ABAA40500FDB7A4 /* Lesson2ViewController.m */,
-				C938657F1ABAA41C00FDB7A4 /* Lesson2AnswerViewController.h */,
-				C93865801ABAA41C00FDB7A4 /* Lesson2AnswerViewController.m */,
 				C93865841ABAA45500FDB7A4 /* Lesson2.storyboard */,
-				C93865861ABAA46800FDB7A4 /* Lesson2Answer.storyboard */,
 			);
 			name = Lesson2;
 			sourceTree = "<group>";
@@ -192,21 +221,8 @@
 				C91DCAC81ABA6ADD002636E0 /* Lesson1Cell.h */,
 				C91DCAC91ABA6ADD002636E0 /* Lesson1Cell.m */,
 				C91DCACA1ABA6ADD002636E0 /* Lesson1.storyboard */,
-				C9E59E781AC1053E008624DB /* Answer */,
 			);
 			name = Lesson1;
-			sourceTree = "<group>";
-		};
-		C9E59E781AC1053E008624DB /* Answer */ = {
-			isa = PBXGroup;
-			children = (
-				C93865741ABAA32C00FDB7A4 /* Lesson1Answer.storyboard */,
-				C93865751ABAA32C00FDB7A4 /* Lesson1AnswerCell.h */,
-				C93865761ABAA32C00FDB7A4 /* Lesson1AnswerCell.m */,
-				C93865771ABAA32C00FDB7A4 /* Lesson1AnswerViewController.h */,
-				C93865781ABAA32C00FDB7A4 /* Lesson1AnswerViewController.m */,
-			);
-			name = Answer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
