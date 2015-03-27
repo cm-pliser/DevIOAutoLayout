@@ -22,8 +22,6 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    self.objects = [NSMutableArray arrayWithArray:self.dataList];
 }
 
 - (void)didReceiveMemoryWarning
