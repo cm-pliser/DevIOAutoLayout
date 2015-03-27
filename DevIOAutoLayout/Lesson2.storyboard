@@ -23,7 +23,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFk-wC-aMA" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lesson2_photo" translatesAutoresizingMaskIntoConstraints="NO" id="EOY-cf-wpq">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="infinite" placeholderIntrinsicHeight="infinite" image="lesson2_photo" translatesAutoresizingMaskIntoConstraints="NO" id="EOY-cf-wpq">
                                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="300" id="bPp-ZC-xBp"/>
