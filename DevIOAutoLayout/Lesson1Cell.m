@@ -39,7 +39,9 @@
 {
     [super layoutSubviews];
     
-    self.contentLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.contentLabel.bounds);
+    if ([[[UIDevice currentDevice] systemVersion] floatValue] < 8.0) {
+        self.contentLabel.preferredMaxLayoutWidth = CGRectGetWidth(self.contentLabel.bounds);
+    }
 }
 
 + (CGFloat)heightForRowWithTableView:(UITableView *)tableView
