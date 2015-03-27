@@ -23,6 +23,12 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85C-x7-X2C" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1200"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lesson2_photo" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-PS-Pkx">
+                                                <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="300" placeholder="YES" id="q2v-j2-gMc"/>
+                                                </constraints>
+                                            </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UHM-Pc-Yqa" userLabel="Sub View">
                                                 <rect key="frame" x="0.0" y="300" width="600" height="900"/>
                                                 <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
@@ -30,9 +36,6 @@
                                                     <constraint firstAttribute="height" constant="900" id="gQ1-cM-Z0Q"/>
                                                 </constraints>
                                             </view>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lesson2_photo" translatesAutoresizingMaskIntoConstraints="NO" id="1Bv-PS-Pkx">
-                                                <rect key="frame" x="0.0" y="-200" width="600" height="500"/>
-                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
